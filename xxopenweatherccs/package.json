@@ -1,0 +1,18 @@
+{
+  "name": "xxopenweatherccs",
+  "version": "1.0.0",
+  "description": "Custom Component API CCS",
+  "main": "xxopenweatherccs.js",
+  "dependencies": {
+    "joi": "^9.2.0",
+    "log4js": "^1.1.1"
+  },
+  "oracleMobile": {
+    "dependencies": {
+      "apis": {
+        "/mobile/custom/xxopenWeather": "1.0"
+      },
+      "connectors": {}
+    }
+  }
+}

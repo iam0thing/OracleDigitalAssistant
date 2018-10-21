@@ -1,0 +1,54 @@
+#%RAML 0.8
+title: xxopenWeather
+version: 1.0
+baseUri: /mobile/custom/xxopenWeather
+protocols: [HTTPS]
+/city:
+  post:
+    protocols: [HTTPS]
+    body:
+      application/json:
+        example: |
+          {
+            "city": "London",
+            "country": "uk"
+          }
+          
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {"city": "London",
+               "country": "uk",
+               "weather":"clouds",
+               "description":"overcast clouds",
+               "icon":"https://openweathermap.org/img/w/04n.png",
+               "temperature":5.5
+              }
+              
+/zip:
+  post:
+    protocols: [HTTPS]
+    body:
+      application/json:
+        example: |
+          
+          {
+            "zip": "London",
+            "country": "uk"
+          }
+          
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+               "city": "London",
+               "country": "uk",
+               "weather":"clouds",
+               "description":"overcast clouds",
+               "icon":"https://openweathermap.org/img/w/04n.png",
+               "temperature":5.5
+               }

@@ -1,0 +1,12 @@
+{
+  "name" : "xxopenweather",
+  "version" : "1.0.0",
+  "description" : "Shared Custom API",
+  "main" : "xxopenweather.js",
+  "oracleMobile" : {
+    "dependencies" : {
+      "apis" : { },
+      "connectors" : {"/mobile/connector/OpenWeatherMapConn":"1.0"}
+    }
+  }
+}
